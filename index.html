@@ -1,7 +1,45 @@
 <!DOCTYPE html>
 <html>
+	<head>
+    <title>Jack Wheeler Assignment 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript">
+	    	function sendRequest(){
+	    		var URL= 'http://localhost:8080/';
+	    		URL +=document.getElementById('function').value;
+	    		URL+='?n='+document.getElementById('num').value;
+				$.ajax({
+				    url : URL,
+				    type : 'GET',
+				    dataType:'json',
+				    success : function(data) { 
+				    	document.getElementById('wrapper').innerHTML = '<table>'+data.sum+'</table>';            
+				        console.log(data);
+				    },
+				    error : function(request,error)
+				    {
+				        alert('failed');
+				    }
+				});
+			}
+		
+  	</script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<form name="tablegen"> <!--initializes form for inputting values-->
+<label>Value: <input type = "number" id = "num"/></label><br /> <!--asks for user input.-->
+<select id="function">
+   <option value="None">-- Select --</option>
+   <option value="sum">Summation</option>
+   <option value="fact">Factorial</option>
+</select>
+<input name="generate" type="button" value="Calculator" onclick='sendRequest();'/> <!--button that, when pushed, runs the javascript to output the table-->
+</form>
+
+<div id="wrapper"></div> <!--creates a div so that when the raw html gets output by the function, it will be turned into a table with all of the values in it-->
+
 </html>
