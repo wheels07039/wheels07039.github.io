@@ -1,45 +1,42 @@
-<!DOCTYPE html>
 <html>
-	<head>
-    <title>Jack Wheeler Assignment 3</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-    <script type="text/javascript">
-	    	function sendRequest(){
-	    		var URL= 'http://localhost:8080/';
-	    		URL +=document.getElementById('function').value;
-	    		URL+='?n='+document.getElementById('num').value;
-				$.ajax({
-				    url : URL,
-				    type : 'GET',
-				    dataType:'json',
-				    success : function(data) { 
-				    	document.getElementById('wrapper').innerHTML = '<table>'+data.sum+'</table>';            
-				        console.log(data);
-				    },
-				    error : function(request,error)
-				    {
-				        alert('failed');
-				    }
-				});
-			}
-		
-  	</script>
-</head>
+  <head>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+    jQuery(function() {
+      $('#mypanel').enhanceWithin().panel();
+    });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <div data-role="page" id="home" >
+      <div data-role="header">
+        <div class="topnav navBar">
+          <IMG SRC="Resources/logo.png" ALT="some text" class="logo">
+          <a class="active" href="/" data-ajax = "false">Home</a>
+          <a href="/News" data-ajax = "false">News</a>
+          <a href="/Login" data-ajax = "false">Login</a>
+          <a href="/Settings" data-ajax = "false">Settings</a>
+          <a href="/Play" data-ajax = "false"class="play">Play</a>
+        </div>
+      </div>
+<div data-role="main" class="ui-content lorips">
+      	<h1>Lorem Ipsum</h1>
+        <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt elit a lectus volutpat, semper vestibulum ipsum dapibus. Phasellus hendrerit egestas pulvinar. Ut nec pulvinar velit. Curabitur at ligula vitae erat ornare mattis in eget sapien. Phasellus eleifend dignissim lectus non laoreet. Nam a neque fermentum ante tristique iaculis. Proin quis sodales nisi. Sed ut quam nec erat pharetra feugiat. In ut facilisis tortor.
 
-<body>
-<form name="tablegen"> <!--initializes form for inputting values-->
-<label>Value: <input type = "number" id = "num"/></label><br /> <!--asks for user input.-->
-<select id="function">
-   <option value="None">-- Select --</option>
-   <option value="sum">Summation</option>
-   <option value="fact">Factorial</option>
-</select>
-<input name="generate" type="button" value="Calculator" onclick='sendRequest();'/> <!--button that, when pushed, runs the javascript to output the table-->
-</form>
+Praesent ac purus dictum, ullamcorper lacus eget, pulvinar nibh. Integer lacinia lacinia turpis ac sagittis. Vestibulum luctus, est volutpat pretium sollicitudin, nibh risus dapibus nulla, quis euismod enim ligula eu diam. Sed elementum tellus quis dapibus placerat. Nam eleifend nisi vitae odio cursus, laoreet congue erat rutrum. Duis sit amet ipsum lectus. Pellentesque lorem nibh, eleifend sit amet ullamcorper in, pulvinar eget metus. Integer laoreet mi non luctus sollicitudin. In venenatis neque eget dui tempor, quis imperdiet urna imperdiet. Vivamus vel ante nec diam sollicitudin congue blandit at risus. Morbi vitae justo sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur hendrerit urna, sed luctus dolor pharetra sed. Suspendisse potenti.
 
-<div id="wrapper"></div> <!--creates a div so that when the raw html gets output by the function, it will be turned into a table with all of the values in it-->
+Nulla neque elit, rhoncus blandit ex sit amet, imperdiet finibus mauris. Donec fermentum, arcu ut pretium maximus, metus mi cursus nunc, et venenatis urna purus ac libero. Proin nec leo vulputate, semper purus ac, viverra ligula. Nulla lacinia diam consequat mattis sollicitudin. Vivamus non iaculis turpis, et feugiat erat. Fusce accumsan in ex ac venenatis. Aenean laoreet malesuada mi id rhoncus. Suspendisse ut felis elementum, euismod sapien eget, semper sapien. Vestibulum elementum mauris quis rutrum pretium. Sed malesuada consectetur justo eget egestas. Nulla nec est id orci aliquet semper et et nisl.
 
+Vivamus laoreet porta quam id malesuada. Praesent cursus orci ligula, sodales venenatis dolor dapibus in. Nam semper ligula ante, in ullamcorper massa elementum sit amet. Donec gravida erat nec nisi egestas accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum a tristique odio. Maecenas in nulla ex. Duis tincidunt ante non neque feugiat vehicula.
+
+Sed tempor non libero vitae bibendum. Vestibulum commodo blandit est, at varius purus semper eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut quis felis pellentesque, tempus nunc eleifend, sagittis odio. Aliquam sollicitudin tincidunt arcu vitae scelerisque. Aliquam erat volutpat. Vestibulum suscipit, quam quis ornare placerat, mi tortor imperdiet turpis, vitae bibendum diam sem sed ex. In ut arcu ornare, feugiat dui ut, lobortis felis.</h4>
+      </div>
+ </div>
+  </head>
+        <body>
+
+</body>
 </html>
