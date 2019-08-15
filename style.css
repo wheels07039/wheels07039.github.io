@@ -147,10 +147,10 @@ img.logo{
 }
 
 .lorips{
-    width: 700;
+    width: 1000;
     margin-top: 15;
     color: rgba(5,5,5,.3);
-    background-color: rgba(5,5,5,.7);
+    background-color: rgba(250,250,250,.7);
     margin-left: 230;
     float: left;
 }
