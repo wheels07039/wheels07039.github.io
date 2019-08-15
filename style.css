@@ -78,7 +78,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: blue;
   color: white;
 }
 .play{
@@ -104,13 +104,6 @@
 .logo{
   background-color: rgb(25,25,25,1);
 
-}
-img.logo{
-  float: left !important;
-  padding-bottom: none !important;
-  padding-top: 3 !important;
-  padding-left: 5;
-  padding-right: 5;
 }
 
 .navBar{
