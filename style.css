@@ -166,5 +166,9 @@
   margin-bottom: 25;
 }
 .linkedin {
-  float: right;
+  float: right !important;
+}
+.LIicon {
+  height: 10;
+  width: 10;
 }
