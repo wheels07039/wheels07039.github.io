@@ -158,9 +158,9 @@
 }
 .portrait {
   float: right;
-  margin-left: 50;
+  margin-left: 25;
   width: 250;
   height: 250;
-  margin-right: 50;
-  margin-top: 50;
+  margin-right: 25;
+  margin-top: 25;
 }
