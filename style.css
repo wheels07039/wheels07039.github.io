@@ -1,59 +1,7 @@
 
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
-  background-color: rgba(247,247,247,.7);
-  }
-
-.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
-  background-color: rgba(0,0,0,.6);
-}
-.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
-  background-color: rgba(0,0,0,.6);
-  }
-.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a{
-  background-color: rgba(0,0,0,.6);
-  border-color: rgba(0,0,0,.6);
-  color: rgba(0,0,0,.6);
-}
-
-.textbox {
-    width: 400;
-    margin-top: 125;
-    margin-left: 425px;
-    color: rgba(5,5,5,.3);
-    background-color: rgba(5,5,5,.7);
-}
-.ui-input-text input, .ui-input-search input {
-  background: white;
-  }
-.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
- color: black;
-}
-
-.submitButton{
-    background-color: white !important;
-    color: black !important;
-    opacity: 1 !important;
-    text-indent: 0 !important;
-    font-size: 20 !important;
-}
-.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
-  color: white;
-}
-
-.slideshow{
-
-  margin-left: 25px;
-  margin-top: 125px;
-  
-}
-.playButton{
-  background-color: yellow !important;
-  color: black !important;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #151B54;
   overflow: hidden;
   border-color: none !important;
 }
@@ -105,40 +53,6 @@
   background-color: rgb(25,25,25,1);
 
 }
-
-.navBar{
-  background-color: #151B54;
-}
-.news1{
-  float:left !important;
-
-  width:875;
-  height:465;
-  padding: .2em .2em !important;
-}
-.news2{
-  float:right !important;
-
-  width:280;
-  height:140;
-  padding: .2em .2em !important;
-}
-
-.news3{
-  float:right !important;
-
-  width:280;
-  height:140;
-  padding: .2em .2em !important;
-}
-
-.news4{
-  float:right !important;
-  width:280;
-  height:140;
-  padding: .2em .2em !important;
-}
-
 .lorips{
     width: 80%;
     margin-top: 3%;
@@ -146,15 +60,6 @@
     background-color: white;
     margin-left: 10%;
     float: left;
-}
-.loggedin{
-  color: white;
-  width: 500;
-  font-size: 30px;
-}
-
-.thingy{
-  width: 450;
 }
 .portrait {
   float: right;
@@ -179,3 +84,10 @@
   word-wrap: normal;
   hyphens: auto;
 }
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
