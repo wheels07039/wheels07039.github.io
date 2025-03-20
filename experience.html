@@ -1,139 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script>
-    jQuery(function() {
-      $('#mypanel').enhanceWithin().panel();
-    });
-    </script>
-    <link rel="stylesheet" href="style.css"/>
-    <div data-role="page" id="home" >
-      <div data-role="header">
-        <div class="topnav navBar">
-          <a class="active" href="/" data-ajax = "false">Home</a>
-          <a href="/experience" data-ajax = "false">Resume</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script>
+        jQuery(function() {
+          $('#mypanel').enhanceWithin().panel();
+        });
+        </script>
+        <link rel="stylesheet" href="style.css"/>
+    
+        <title>Jack Wheeler's Resume</title>
+    </head>
+    <body>
+        <div data-role="page" id="home" >
+            <div data-role="header">
+                <div class="topnav navBar">
+                  <a class="active" href="/" data-ajax = "false">Home</a>
+                  <a href="/experience" data-ajax = "false">Resume</a>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Jack Wheeler</h1>
+                <div class="contact-info">
+                    <p>Phone: 973-985-1163 | Email: <a href="mailto:jack@jdwheeler.com">jack@jdwheeler.com</a></p>
+                </div>
+        
+                <h2 class="section-title">Education</h2>
+                <p><strong>Drexel University</strong><br>
+                   Bachelor of Science in Computer Science | Graduated: March 2023</p>
+        
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-content">
+                    <p><strong>Software & Tools:</strong></p>
+                    <ul>
+                        <li>ServiceNow, iVanti, Intune, Microsoft Office/Windows, Linux, Active Directory, GitHub, Azure, Unity, Crestron, Airwatch</li>
+                    </ul>
+                    <p><strong>Programming Languages:</strong></p>
+                    <ul>
+                        <li>C#, C++, Python, Java, JavaScript, HTML, CSS, PowerShell, Git, Node.js, Ajax, jQuery, Bash</li>
+                    </ul>
+                </div>
+        
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-content">
+                        <p class="job-title">IT Support Representative / Site Support Analyst</p>
+                        <p class="company-name">Greenberg Traurig — Philadelphia, PA</p>
+                        <p class="date">09/2023–Present</p>
+                        <ul>
+                            <li>Collaborate with Subject Matter Expert (SME) teams to resolve escalated technical issues, ensuring minimal downtime and optimal user experience.</li>
+                            <li>Led a site-wide upgrade to Windows 11, overseeing scheduling, imaging, and user training to facilitate smooth adoption across the organization.</li>
+                            <li>Managed conference room setups, including web conferencing and Crestron A/V equipment for depositions, meetings, and events, ensuring high-quality, seamless presentations.</li>
+                            <li>Conducted mass downloads, scans, and uploads for new client and attorney files, improving efficiency and file management.</li>
+                            <li>Installed and configured a new IP camera and NVR system, enhancing site security and surveillance.</li>
+                            <li>Spearheaded migration from Airwatch to Intune MDM systems, streamlining mobile device management and improving workflow.</li>
+                            <li>Assisted with IT audits, preparing for and supporting site-wide assessments to ensure compliance with company policies and best practices.</li>
+                        </ul>
+        
+                        <p class="job-title">ITSM Intern</p>
+                        <p class="company-name">Berkley Technology Services (BTS) — Wilmington, DE</p>
+                        <p class="date">10/2019–03/2020</p>
+                        <ul>
+                            <li>Developed and implemented ServiceNow catalog items, improving the user experience for internal IT services and ensuring smooth transitions to the production environment.</li>
+                            <li>Represented catalog items and system changes at weekly Change Advisory Board (CAB) meetings, ensuring that updates were thoroughly evaluated and documented.</li>
+                            <li>Automated over 100 tests using the Automated Testing Framework (ATF) in ServiceNow to verify the functionality of catalog items and ensure quality control.</li>
+                            <li>Created detailed test templates and comprehensive documentation, enabling future team members to continue using ATF for ongoing catalog item testing.</li>
+                        </ul>
+                </div>
+                <h2 class="section-title">Project Experience</h2>
+                <div class="section-content">
+                        <p class="job-title">Senior Design Project: Rushdown</p>
+                        <p class="company-name">Drexel University</p>
+                        <p class="date">08/2021–06/2022</p>
+                        <ul>
+                            <li>Collaborated with a team of 5 programmers and 8 artists to develop a competitive online 3v3 team game based on a freeze tag mechanic.</li>
+                            <li>Developed the game in Unity using C#, and employed Git for version control to ensure seamless collaboration across the team.</li>
+                            <li>Led the development of character abilities, designing a base ability class that allowed abilities to be easily added to characters without additional programming.</li>
+                            <li>Worked closely with animators and server programmers to integrate abilities with the game’s animation and networking systems, ensuring smooth gameplay for all players.</li>
+                        </ul>
+                        <p class="job-title">Laser Frag</p>
+                        <p class="company-name">Independent Project</p>
+                        <p class="date">07/2019–Present</p>
+                        <ul>
+                            <li>Designed and developed a single-player 3D FPS game featuring a laser gun, grenade launcher, and other custom weapons.</li>
+                            <li>Developed a free-play mode and a story mode, offering players diverse gameplay experiences.</li>
+                            <li>Focused on building a flexible game framework, allowing future updates and additions without modifying core game code, ensuring scalability and longevity of the project.</li>
+                            <li>Leveraged Unity and C# for game development, expanding technical skills and exploring new game mechanics.</li>
+                        </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    <title>Jack Wheeler's Resume</title>
-    <!--<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .contact-info {
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            color: #0056b3;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .job-title {
-            font-weight: bold;
-        }
-        .company-name {
-            font-style: italic;
-            color: #555;
-        }
-        .section-content{
-            margin-left:20px;
-        }
-        .date {
-            color: #777;
-        }
-    </style>-->
-</head>
-<body>
-    <div class="container">
-        <h1>Jack Wheeler</h1>
-        <div class="contact-info">
-            <p>Phone: 973-985-1163 | Email: <a href="mailto:jack@jdwheeler.com">jack@jdwheeler.com</a></p>
-        </div>
-
-        <h2 class="section-title">Education</h2>
-        <p><strong>Drexel University</strong><br>
-           Bachelor of Science in Computer Science | Graduated: March 2023</p>
-
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="section-content">
-            <p><strong>Software & Tools:</strong></p>
-            <ul>
-                <li>ServiceNow, iVanti, Intune, Microsoft Office/Windows, Linux, Active Directory, GitHub, Azure, Unity, Crestron, Airwatch</li>
-            </ul>
-            <p><strong>Programming Languages:</strong></p>
-            <ul>
-                <li>C#, C++, Python, Java, JavaScript, HTML, CSS, PowerShell, Git, Node.js, Ajax, jQuery, Bash</li>
-            </ul>
-        </div>
-
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="section-content">
-                <p class="job-title">IT Support Representative / Site Support Analyst</p>
-                <p class="company-name">Greenberg Traurig — Philadelphia, PA</p>
-                <p class="date">09/2023–Present</p>
-                <ul>
-                    <li>Collaborate with Subject Matter Expert (SME) teams to resolve escalated technical issues, ensuring minimal downtime and optimal user experience.</li>
-                    <li>Led a site-wide upgrade to Windows 11, overseeing scheduling, imaging, and user training to facilitate smooth adoption across the organization.</li>
-                    <li>Managed conference room setups, including web conferencing and Crestron A/V equipment for depositions, meetings, and events, ensuring high-quality, seamless presentations.</li>
-                    <li>Conducted mass downloads, scans, and uploads for new client and attorney files, improving efficiency and file management.</li>
-                    <li>Installed and configured a new IP camera and NVR system, enhancing site security and surveillance.</li>
-                    <li>Spearheaded migration from Airwatch to Intune MDM systems, streamlining mobile device management and improving workflow.</li>
-                    <li>Assisted with IT audits, preparing for and supporting site-wide assessments to ensure compliance with company policies and best practices.</li>
-                </ul>
-
-                <p class="job-title">ITSM Intern</p>
-                <p class="company-name">Berkley Technology Services (BTS) — Wilmington, DE</p>
-                <p class="date">10/2019–03/2020</p>
-                <ul>
-                    <li>Developed and implemented ServiceNow catalog items, improving the user experience for internal IT services and ensuring smooth transitions to the production environment.</li>
-                    <li>Represented catalog items and system changes at weekly Change Advisory Board (CAB) meetings, ensuring that updates were thoroughly evaluated and documented.</li>
-                    <li>Automated over 100 tests using the Automated Testing Framework (ATF) in ServiceNow to verify the functionality of catalog items and ensure quality control.</li>
-                    <li>Created detailed test templates and comprehensive documentation, enabling future team members to continue using ATF for ongoing catalog item testing.</li>
-                </ul>
-        </div>
-        <h2 class="section-title">Project Experience</h2>
-        <div class="section-content">
-                <p class="job-title">Senior Design Project: Rushdown</p>
-                <p class="company-name">Drexel University</p>
-                <p class="date">08/2021–06/2022</p>
-                <ul>
-                    <li>Collaborated with a team of 5 programmers and 8 artists to develop a competitive online 3v3 team game based on a freeze tag mechanic.</li>
-                    <li>Developed the game in Unity using C#, and employed Git for version control to ensure seamless collaboration across the team.</li>
-                    <li>Led the development of character abilities, designing a base ability class that allowed abilities to be easily added to characters without additional programming.</li>
-                    <li>Worked closely with animators and server programmers to integrate abilities with the game’s animation and networking systems, ensuring smooth gameplay for all players.</li>
-                </ul>
-                <p class="job-title">Laser Frag</p>
-                <p class="company-name">Independent Project</p>
-                <p class="date">07/2019–Present</p>
-                <ul>
-                    <li>Designed and developed a single-player 3D FPS game featuring a laser gun, grenade launcher, and other custom weapons.</li>
-                    <li>Developed a free-play mode and a story mode, offering players diverse gameplay experiences.</li>
-                    <li>Focused on building a flexible game framework, allowing future updates and additions without modifying core game code, ensuring scalability and longevity of the project.</li>
-                    <li>Leveraged Unity and C# for game development, expanding technical skills and exploring new game mechanics.</li>
-                </ul>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
